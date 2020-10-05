@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./style/style.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="col-2">
+            <span class="header-test">truYum</span>
+            <img class="logo" src="images/logo.png">
+        </div>
+        <div class="col-2">
+            <nav>
+                <a href="menu-item-list-admin.html" class="menu">Menu</a>
+            </nav> 
+        </div>
+    </header>
+    <div class="divide">
+        <section>
+            <h1 id="heading">Edit Menu Item</h1>
+            <br>
+            <div id="enterName">
+            <label for="name">Name</label><br>
+            <input type="text" id="productName">
+            </div>
+            <table class="newTable" cellspacing="40">
+                
+                    <tr>
+                        <th style="text-align: left">Price (Rs.)</th><br>
+                        <th style="text-align: left">Active</th>
+                        <th style="text-align: left">Date Of Launch</th>
+                        <th style="text-align: left">Category</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="productPrice" required></td>
+                        <td><input type="radio" name="select" value="yes" checked><label for="yes">Yes</label><input type="radio" name="select" value="no"><label for="no">No</label></td>
+                        <td><input type="text" id="productDate" required></td>
+                        <td>
+                            <select id="category">
+                                <option selected>Choose</option>
+                                <option value="Starters">Starters</option>
+                                <option value="Main Course">Main Course</option>
+                                <option value="Dessert">Dessert</option>
+                                <option value="Drinks">Drinks</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="freeDelivery"><label for="gridCheck">Free Delivery</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="save" value ="Save" onclick = "return validate()"></td>
+                    </tr>
+            </table>
+        </section>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <footer>Copyright &copy;2019</footer>
+</body>
+</html>
